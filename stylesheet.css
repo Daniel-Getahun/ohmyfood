@@ -17,11 +17,12 @@ header img {
 }
 nav {
     text-align: center;
+    background-color: rgb(243, 243, 243);
 }
 .map-paris {
     display: flex;
     justify-content: center;
-    background-color: rgb(239, 237, 237);
+    background-color: rgb(218, 218, 218);
     height: 40px;
     padding-top: 15px;
 }
@@ -33,9 +34,9 @@ nav {
     padding: 20px;
 }
 .card__image {
-    object-fit: fill;
-    height: 200px;
-    border: 5px solid white;
+    
+    width: 100%;
+    object-fit: cover;
     border-radius: 20px 20px 0 0; 
     background-color: white;
 }
@@ -44,7 +45,6 @@ nav {
     margin: 10px;
 }
 .card_text-wrap {
-    width: 100%;
     height:60px;
     position: relative;
     top: -10px;
@@ -100,6 +100,17 @@ nav {
 .gradient:hover::before {
     opacity: 1;
 }
+
+#how-it-works {
+    padding: 20px;
+}
+#main {
+    background-color: rgb(243, 243, 243);
+}
+#main h1 {
+    padding: 30px 0 0 15px;
+}
+
 
 
 
