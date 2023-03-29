@@ -7,7 +7,7 @@ body {
     background-color: #f9f9f9f9;
 }
 /* Mobil/Main styles here*/
-@media only screen and (max-width: 600px) and (min-width: 400px) {
+
     header {
         text-align: center;
     }
@@ -26,16 +26,17 @@ body {
         padding: 20px;
     }
     .card__image {
-        width: 100%; 
+        object-fit: fill;
+        
         height: 200px;
         border: 5px solid white;
         border-radius: 20px 20px 0 0; 
         background-color: white;
-}
+    }
     .card {
         padding: 0  0 20px 0;
         margin: 10px;
-}
+    }
     .card_text-wrap {
         width: 100%;
         height:60px;
@@ -45,49 +46,54 @@ body {
         border-radius: 0 0 15px 15px;
         padding: 5px 0 0 10px;
         
-}
+    }
     .card_text-wrap h4 {
         text-decoration: none;
     }
-.btn {
-    padding: 20px 100px ;
-}
-.gradient {
-    position: relative;
-    height: 40px;
-    border-radius: 60px;
-    text-align: center;
-    background-image: linear-gradient(
-        to right,
-        hsl(211, 100%, 50%),
-        hsl(179, 100%, 30%)
-    );
-    z-index: 1;
-}
+    .btn {
+        padding: 20px 100px ;
+    }
+    .btn a {
+        margin-top: 20px;
+    }
+    .gradient {
+        position: relative;
+        height: 40px;
+        border-radius: 20px;
+        text-align: center;
+        background-image: linear-gradient(
+            to right,
+            hsl(211, 100%, 50%),
+            hsl(179, 100%, 30%)
+        );
+        z-index: 1;
+    }
 
-.gradient::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(
-    to bottom,
-    hsl(344, 100%, 50%),
-    hsl(31, 100%, 40%)
-  );
-  z-index: -1;
-  transition: opacity 0.5s linear;
-  opacity: 0;
-}
-.gradient:hover::before {
-  opacity: 1;
-}
+    .gradient::before {
+        
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 20px;
+        background-image: linear-gradient(
+            to bottom,
+            hsl(291, 85%, 58%),
+            hsl(307, 27%, 74%)
+        );
+        z-index: -1;
+        transition: opacity 0.5s linear;
+        opacity: 0;
+        }
+        .gradient:hover::before {
+        opacity: 1;
+        }
 
 
 
-}
+
 
 /*Tablet here*/
 @media only screen and (max-width: 600px) and (min-width: 400px) {
