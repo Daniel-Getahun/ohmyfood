@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'roboto', sans-serif;
     background-color: #f9f9f9f9;
 }
 
@@ -79,10 +79,7 @@ nav {
     left: 0;
     border-radius: 20px;
     background-image: linear-gradient(
-        to bottom,
-        hsl(291, 85%, 58%),
-        hsl(307, 27%, 74%)
-    );
+        to bottom,#9356dc,#ff79da);
     z-index: -1;
     transition: opacity 0.5s linear;
     opacity: 0;
