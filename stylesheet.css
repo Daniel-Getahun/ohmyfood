@@ -159,6 +159,33 @@ nav {
     opacity: 1;
 }
 
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 30px;
+}
+
+.footer-ohmyfood {
+    font-family: 'Shrikhand';
+    color: white;
+    font-weight: bolder;
+    font-size:xx-large;
+    font-style: italic;
+}
+
+.footer-icons {
+    display: flex;
+    margin: 20px 0 ;
+}
+#legal-and-contact p {
+    margin: 20px 0;
+}
+
+
+
+
+
+
 
 
 /*Tablet here*/
