@@ -8,6 +8,9 @@ body {
     background-color: #f9f9f9f9;
     min-width: 390px;
 }
+a {
+    text-decoration: none;
+}
 
 header {
     text-align: center;
@@ -46,7 +49,6 @@ nav {
 }
 .btn-explore a{
     margin-top: 20px;
-    text-decoration: none;
     color: white;
 }
 .btn-explore p {
@@ -168,7 +170,6 @@ main h1 {
     
 }
 .card_text-wrap h4, a{
-    text-decoration: none;
     padding-bottom: 3px;
     color: black;
 }
@@ -232,8 +233,12 @@ footer {
 .fa-handshake, .fa-utensils {
     padding-right: 10px;
 }
-#legal-and-contact p {
+#legal-and-contact p, a {
     margin: 20px 0;
+}
+.contact {
+    color: white;
+    font-size: 26px;
 }
 
 /*Tablet here*/
