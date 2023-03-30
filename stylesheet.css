@@ -33,29 +33,8 @@ nav {
 .book-the-menu {
     padding: 20px;
 }
-.card__image {
-    
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0; 
-    background-color: white;
-}
-.card {
-    padding: 0  0 20px 0;
-    margin: 10px;
-}
-.card_text-wrap {
-    height:60px;
-    position: relative;
-    top: -10px;
-    background-color: white;
-    border-radius: 0 0 15px 15px;
-    padding: 5px 0 0 10px;
-    
-}
-.card_text-wrap h4 {
-    text-decoration: none;
-}
+
+
 .btn {
     padding: 20px 100px ;
     font-size: 12px;
@@ -76,8 +55,7 @@ nav {
     text-align: center;
     background-image: linear-gradient(
         to right,
-        hsl(211, 100%, 50%),
-        hsl(179, 100%, 30%)
+        #9356dc,#ff79da
     );
     z-index: 1;
 }
@@ -92,7 +70,7 @@ nav {
     left: 0;
     border-radius: 20px;
     background-image: linear-gradient(
-        to bottom,#9356dc,#ff79da);
+        to bottom,#ff79da, #9356dc);
     z-index: -1;
     transition: opacity 0.5s linear;
     opacity: 0;
@@ -104,15 +82,82 @@ nav {
 #how-it-works {
     padding: 20px;
 }
+/*main*/
 #main {
     background-color: rgb(243, 243, 243);
+    height: auto;
 }
 #main h1 {
-    padding: 30px 0 0 15px;
+    padding: 30px 0 15px 15px;
+}
+.card {
+    padding: 0  0 10px 0;
+    margin: 0 20px;
+}
+.card__image {
+    
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0; 
+    background-color: white;
+}
+.the-enchanted-plate {
+    height: 226px ;
+}
+.card_text-wrap {
+    display: flex;
+    justify-content: space-between;
+    height:60px;
+    position: relative;
+    top: -10px;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    padding: 5px 0 0 10px;
+    
+}
+.card_text-wrap h4, a{
+    text-decoration: none;
+    padding-bottom: 3px;
+    color: black;
 }
 
+.new {
+    position: relative;
+    top: -270px;
+    left: 250px;
+    background-color: #99e2d0;
+    width: 60px;
+    text-align: center;
+    height: 20px;
+    padding-top: 5px;
+}
+.favorite {
+    margin-right: 20px;
+    position: relative;
+    background-image: linear-gradient(
+        to right,
+        white
+    );
+    z-index: 1;
+}
 
+.favorite::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+        to bottom, #9356dc,#ff79da);
+    z-index: -1;
+    transition: opacity 0.1s linear;
+    opacity: 0;
+}
 
+.favorite:hover::before {
+    opacity: 1;
+}
 
 
 
