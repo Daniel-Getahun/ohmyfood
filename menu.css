@@ -1,0 +1,62 @@
+/* Mobil/Main styles here*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'roboto', sans-serif;
+    background-color: #f9f9f9f9;
+    min-width: 390px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+header img {
+    width: 50%;
+    text-align: center;
+}
+
+.first-menu {
+    width: 100%;
+    background-image: cover;
+}
+
+/* footer here */
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 30px;
+    /* height: 400px; */
+}
+
+.footer-ohmyfood {
+    font-family: 'Shrikhand';
+    color: white;
+    font-weight: bolder;
+    font-size:xx-large;
+    font-style: italic;
+}
+
+.footer-icons {
+    display: flex;
+    margin: 20px 0 ;
+}
+.fa-handshake, .fa-utensils {
+    padding-right: 10px;
+}
+#legal-and-contact p, a {
+    margin: 20px 0;
+}
+.contact {
+    color: white;
+}
