@@ -84,7 +84,6 @@ nav {
 }
 
 .btn-explore{
-    width: 80%;
     padding: 20px 100px;
     font-size: 14px;
     margin: 0 auto;
@@ -264,7 +263,7 @@ footer {
     background-color: black;
     color: white;
     padding: 20px 30px;
-    height: 400px;
+    /* height: 400px; */
 }
 
 .footer-ohmyfood {
