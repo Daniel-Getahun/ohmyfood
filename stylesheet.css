@@ -4,55 +4,68 @@
     padding: 0;
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+}
 body {
     font-family: 'roboto', sans-serif;
     background-color: #f9f9f9f9;
     min-width: 390px;
     height: auto;
+    animation: fadein 10s;
 }
 
-a {
-    text-decoration: none;
+
+/* fade in animation */
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Loading animation */
+
 .loader {
     position: fixed;
     top: 0;
     left: 0;
-    width: 300px;
-    height: 300px;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #c29999;
-    transition: opacity 1s, visibility 1s;
+    background: transparent;
+    transition: opacity 0.75s, visibility 0.75s;
 }
 
-.loader {
+/* .loader--hidden {
     opacity: 0;
     visibility: hidden;
-}
+} */
 
 .loader::after {
     content: "";
-    width: 100px;
-    height: 100px;
-    border: 15px solid #efeaea;
+    width: 175px;
+    height: 175px;
+    border: 15px solid#ff79da;
     border-top-color: #9356dc;
-    border-bottom-color:#ff79da;
     border-radius: 50%;
-    animation: loading 1.5s ease infinite;
+    animation: loading 0.75s ease infinite;
 }
 
 @keyframes loading {
-    /* from {
-        transform: rotate(2turn);
-    } */
+    from {
+        transform: rotate(0turn);
+    }
     to {
-        transform: rotate(360deg);
+        transform: rotate(1turn);
     }
 }
+
+
 
 header {
     text-align: center;

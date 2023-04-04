@@ -28,6 +28,13 @@ header img {
     width: 100%;
     background-image: cover;
 }
+nav {
+    background-color: rgb(243, 243, 243);
+}
+.nav-menu-title {
+    display: flex;
+    margin: 0 auto;
+}
 
 /* footer here */
 
@@ -36,7 +43,6 @@ footer {
     background-color: black;
     color: white;
     padding: 20px 30px;
-    /* height: 400px; */
 }
 
 .footer-ohmyfood {
