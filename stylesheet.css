@@ -12,22 +12,39 @@ body {
     background-color: #f9f9f9f9;
     min-width: 390px;
     height: auto;
-    animation: fadein 10s;
+    /* animation: fadein 8s; */
 }
 
 
 /* fade in animation */
-@keyframes fadein {
+/* @keyframes fadein {
     from {
         opacity:0;
     }
     to {
         opacity: 1;
     }
-}
+} */
 
 /* Loading animation */
+.loader {
+    position: fixed;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: disapear 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes disapear {
 
+    to {
+        transform: scale(0);
+    }
+}
+/* 
 .loader {
     position: fixed;
     top: 0;
@@ -38,13 +55,8 @@ body {
     align-items: center;
     justify-content: center;
     background: transparent;
-    transition: opacity 0.75s, visibility 0.75s;
+    animation: spinner 1s linear infinite;
 }
-
-/* .loader--hidden {
-    opacity: 0;
-    visibility: hidden;
-} */
 
 .loader::after {
     content: "";
@@ -58,12 +70,12 @@ body {
 
 @keyframes loading {
     from {
-        transform: rotate(0turn);
+        transform: rotate(0deg);
     }
     to {
-        transform: rotate(1turn);
+        transform: rotate(360deg);
     }
-}
+} */
 
 
 
