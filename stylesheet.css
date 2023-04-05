@@ -11,7 +11,8 @@ body {
     font-family: 'roboto', sans-serif;
     background-color: #f9f9f9f9;
     min-width: 390px;
-    height: auto;
+    
+
 }
 
 /* Loading animation */
@@ -27,7 +28,7 @@ body {
     z-index: 1;
     opacity: 0.9;
     animation: spinner 1s linear infinite;
-    animation: disapear 7s;
+    animation: disapear 5s;
     animation-fill-mode: forwards;
 }
 .loader::after {
@@ -58,6 +59,7 @@ header {
 }
 header img {
     width: 50%;
+    padding: 20px 0 0;
     text-align: center;
 }
 nav {
@@ -71,7 +73,7 @@ nav {
     display: flex;
     justify-content: center;
     background-color: rgb(218, 218, 218);
-    height: 40px;
+    line-height: 2;
     padding-top: 15px;
 }
 .fa-location-dot {
@@ -223,12 +225,27 @@ main h1 {
     background-color: #99e2d0;
     width: 60px;
     text-align: center;
-    height: 20px;
+    line-height: 1.5;
     padding-top: 5px;
 }
-.favorite {
-    cursor: pointer;
 
+/* .fas {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 150ms ease-in-out;
+
+}
+.fas:hover {
+    opacity: 1;
+    transform: translateY(-50) scale(1,2);
+} */
+
+
+.material-symbols-outlined{
+    padding-top: 10px;
+    cursor: pointer;
     margin-right: 20px;
     position: relative;
     background-image: linear-gradient(
@@ -238,10 +255,9 @@ main h1 {
     z-index: 1;
 }
 
-.favorite::before {
+.material-symbols-outlined::before {
     position: absolute;
     content: '';
-    
     top: 0;
     right: 0;
     bottom: 0;
@@ -253,9 +269,11 @@ main h1 {
     opacity: 0;
 }
 
-.favorite:hover::before {
+.material-symbols-outlined:hover::before {
     opacity: 1;
 }
+
+
 
 footer {
     background-color: black;
@@ -340,6 +358,9 @@ footer {
         padding-top: 10px;
         font-size: large;
         font-weight: 600;
+    }
+    .fa-location-dot {
+    padding-top: 15px;
     }
     .title {
         font-size: 28px;
