@@ -32,7 +32,7 @@ header img {
     position: relative;
     top: -35px;
     padding: 20px;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(226, 226, 226);
     border-radius: 25px 25px 0 0;
 }
 .restaurant-menu-title {
@@ -53,14 +53,23 @@ header img {
 
 }
 .menu-card {
-   
+    margin: 10px 0;
+}
+.menu-card-title {
+    padding: 10px 0;
 }
 .menu-wrapper {
+    background-color: white;
+    border-radius: 15px;
+    height: 65px;
+    align-items: center;
+    padding: 20px 10px;
+    margin: 20px 0;
     
-    border: 1px solid blue;
 }
 .menu-description {
     display: flex;
+    
     justify-content: space-between;
     padding: #;
 }
