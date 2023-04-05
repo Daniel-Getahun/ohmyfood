@@ -28,7 +28,7 @@ body {
     z-index: 1;
     opacity: 0.9;
     animation: spinner 1s linear infinite;
-    animation: disapear 5s;
+    animation: disapear 3s;
     animation-fill-mode: forwards;
 }
 .loader::after {
