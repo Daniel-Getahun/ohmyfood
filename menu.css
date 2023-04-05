@@ -28,9 +28,10 @@ header img {
     width: 100%;
     background-image: cover;
 }
-.restaurant-menu {
+#restaurant-menu {
     position: relative;
     top: -35px;
+    padding: 20px;
     background-color: rgb(243, 243, 243);
     border-radius: 25px 25px 0 0;
 }
@@ -47,11 +48,22 @@ header img {
 }
 
 .restaurant-menu-groups {
-    
+    display: flex;
+    flex-direction: column;
+
 }
-
-
-
+.menu-card {
+   
+}
+.menu-wrapper {
+    
+    border: 1px solid blue;
+}
+.menu-description {
+    display: flex;
+    justify-content: space-between;
+    padding: #;
+}
 
 /* footer here */
 
