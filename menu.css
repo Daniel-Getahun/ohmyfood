@@ -8,7 +8,7 @@ body {
     font-family: 'roboto', sans-serif;
     background-color: #f9f9f9f9;
     min-width: 390px;
-    height: auto;
+    height: 100vh;
 }
 
 a {
@@ -29,30 +29,26 @@ header img {
     background-image: cover;
 }
 .restaurant-menu {
+    position: relative;
+    top: -35px;
     background-color: rgb(243, 243, 243);
-    
+    border-radius: 25px 25px 0 0;
 }
 .restaurant-menu-title {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 10px;
+}
+.restaurant-menu-title h1 {
+    font-family: "Shrikhand","cursive";
+    font-weight: 900;
+    
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.restaurant-menu-groups {
+    
+}
 
 
 
