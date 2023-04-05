@@ -15,6 +15,45 @@ a {
     text-decoration: none;
 }
 
+/* Loading animation */
+.loader {
+    position: fixed;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: spinner 1s linear infinite;
+    animation: fade 4s;
+    animation-fill-mode: forwards;
+}
+.loader::after {
+    content: "";
+    width:300px;
+    height: 300px;
+    border: 15px solid#ff79da;
+    border-top-color: #9356dc;
+    border-radius: 50%;
+    animation: loading 0.5s ease infinite;
+}
+
+@keyframes fade {
+    to {
+        transform: scale(0);
+    }
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* header starts here */
+
 header {
     text-align: center;
     padding: 20px;
@@ -59,21 +98,84 @@ header img {
     padding: 10px 0;
 }
 .menu-wrapper {
+
     background-color: white;
     border-radius: 15px;
     height: 65px;
-    align-items: center;
-    padding: 20px 10px;
+    padding-top: 15px;
+    padding-left: 10px;
     margin: 20px 0;
     
 }
 .menu-description {
     display: flex;
-    
     justify-content: space-between;
-    padding: #;
+}
+/* menu-check-mark */
+.menu-price-check{
+    display: flex;
+}
+.menu-check-mark{
+    position: relative;
+    top: -33px;
+    width: 60px;
+    margin-left: 10px;
+    padding: 25px 0;
+    border: 1px solid;
+    border-radius: 0 15px 15px 0;
+    background-color: green;
+    height: 65px;
+    cursor: pointer;
+}
+.menu-check-mark:hover {
+    
+}
+/* btn here */
+
+.btn-explore{
+    width: 70%;
+    
+    padding: 20px 100px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+.btn-explore a{
+    margin-top: 20px;
+    color: white;
+}
+.btn-explore p {
+    padding-top: 12px;
+}
+.gradient {
+    position: relative;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    background-image: linear-gradient(
+        to right,
+        #9356dc,#ff79da
+    );
+    z-index: 1;
 }
 
+.gradient::before {
+    
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    background-image: linear-gradient(
+        to bottom,#ff79da, #9356dc);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+.gradient:hover::before {
+    opacity: 1;
+}
 /* footer here */
 
 
@@ -103,4 +205,28 @@ footer {
 }
 .contact {
     color: white;
+}
+
+/*Tablet here*/
+@media screen and (min-width: 768px) and (max-width: 960px) {
+    header img {
+        width: 40%;
+    }
+    .btn-explore {
+        width: 40%;
+    }
+}
+
+/* Desktop here*/
+@media screen and (min-width:961px){
+    body {
+        width: 80%;
+        margin: 0 auto;
+    }
+    header img {
+        width: 40%;
+    }
+    .btn-explore {
+        width: 30%;
+    }
 }
