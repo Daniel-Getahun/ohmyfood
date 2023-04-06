@@ -184,7 +184,7 @@ header img {
     
 }
 
-.menu:hover, .menu-wrapper:hover .box {
+.menu-wrapper:hover .box {
     visibility: visible;
     width: 50px;
     background: #99E2D0;
