@@ -116,26 +116,97 @@ header img {
 .menu-description {
     display: flex;
     justify-content: space-between;
+    text-overflow: ellipsis;
 }
-/* menu-check-mark */
-.menu-price-check{
-    display: flex;
-}
-.menu-check-mark{
-    position: relative;
-    top: -33px;
-    width: 60px;
-    margin-left: 10px;
-    padding: 25px 0;
-    border: 1px solid;
-    border-radius: 0 15px 15px 0;
-    background-color: green;
-    height: 65px;
+/*menu ghradually apear on page load*/
+.menu-card {
+    transition-duration: 2s;
+    transition-property: height;
     cursor: pointer;
 }
-.menu-check-mark:hover {
+
+.menu-card:hover .menu-wrapper{
+
+    animation: drop 2s;
+}
+
+@keyframes drop {
+
+    0%   { transform: translatey(-100px); }
+    100% { transform: translatey(0); }
     
 }
+/*menu ghradually apear on page load*/
+
+
+
+.menu-price{
+    display: flex;
+}
+.fa-solid {
+    font-size: x-large;
+    
+}
+
+.check:hover .box{
+    animation: rotate;
+}
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* menu-check-mark */
+.menu-check-mark {
+    
+    position: relative;
+    top: -33px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    
+    
+}
+
+.check {
+    visibility: hidden;
+    width: 50px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 15px 15px 0;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    animation-duration: 2s;
+    transform-origin: right;
+    
+}
+
+.menu:hover, .menu-wrapper:hover .box {
+    visibility: visible;
+    width: 50px;
+    background: #99E2D0;
+    transition-timing-function: ease-in-out;
+    animation-name: bounce;
+} 
+@keyframes bounce {
+
+    0%   { transform: translatex(20px); }
+    100% { transform: translatex(0px); }
+    
+}
+
+/* @keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+ */
+
+
+
 /* btn here */
 
 .btn-explore{
@@ -240,6 +311,6 @@ footer {
     height: 600px;
 }
     .btn-explore {
-        width: 30%;
+        width: 20%;
     }
 }
