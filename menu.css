@@ -13,6 +13,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 .banner img {
     object-fit: cover;
@@ -61,12 +62,18 @@ a {
 /* header starts here */
 
 header {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     padding: 20px;
 }
 header img {
+
     width: 50%;
     text-align: center;
+}
+.logo {
+    margin: 0 auto;
 }
 
 .banner img {
