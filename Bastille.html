@@ -5,249 +5,162 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bastille</title>
-    <!-- <link rel="stylesheet" href="menu.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     
 
 </head>
 <body>
-    
-    <!-- loading here -->
-    <!-- <div class="loader">loading.....</div> -->
-
-    <header>
-        <div class="back-btn">
-            <a href="index.html">
-                <i class="fa-solid fa-arrow-left"></i>
-            </a>
-        </div>
-        <div class="logo">
-            <img src="images/logo/ohmyfood.png" alt="ohmyfood logo">
-        </div>
+    <header class="menu-header">
+        <a href="index.html" class="header-back-btn">
+            <i class="fas fa-arrow-left"></i>
+        </a> 
+        <a href="index.html"><img src="images/logo/ohmyfood.png" alt="Ohmyfood-logo" class="menu-header"></a>
     </header>
 
-    <section class="banner">
-        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.webp" alt="">
+    <section class="banner-menu">
+        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.webp" alt=" the full palette dish">
     </section>
 
-    <main id="restaurant-menu">
-        <section class="restaurant-menu-title">
-            <h1> Bastille </h1>
-            <span class="material-symbols-outlined">
-                favorite
-            </span>
-        </section>
-        <section class="restaurant-menu-groups">
-            <div class="menu-card"> <p class="menu-card-title">ENTREES</p>
-                <div class="menu-wrapper">
-                    <h4>Citrus Squid Carpaccio</h4>
-                    <div class="menu-description">
-                        <p>With orange zest</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                    
-                    
-                </div>
-                <div class="menu-wrapper">
-                    <h4>Grandmother's Vegetable Soup</h4>
-                    <div class="menu-description">
-                        <p>Carrots, parsnips, Jerusalem artichoke</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-                <div class="menu-wrapper">
-                    <h4>Onion Soup</h4>
-                    <div class="menu-description">
-                        <p>Revisited</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    
-                </div>
+    <main class="restaurant-page-grey-background" id="main">
+        <section class="restaurant-page-menu">
+            <div class="restaurant-page-menu__title">
+                <h1 class="restaurant-page-menu__text">Bastille</h1>
+                <span class="hoverheart">
+                    <i class="far fa-heart hoverheart__content-light"></i>
+                    <i class="fas fa-heart hoverheart__content-solid"></i>
+                </span>
             </div>
-            <div class="menu-card"> <p class="menu-card-title"> MAIN DISH </p> 
-                <div class="menu-wrapper">
-                    <h4>Scallops</h4>
-                    <div class="menu-description">
-                        <p>With mashed parsnip</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-                <div class="menu-wrapper">
-                    <h4>Magret de canard</h4>
-                    <div class="menu-description">
-                        <p>With mashed potatoes</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-                <div class="menu-wrapper">
-                    <h4>Game Hen</h4>
-                    <div class="menu-description">
-                        <p>With vegetable gnocchis</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-            </div>
-            <div class="menu-card"> <p class="menu-card-title"> DESSERTS</p>
-                <div class="menu-wrapper">
-                    <h4>Floral ice Cream</h4>
-                    <div class="menu-description">
-                        <p>With hazelnut butter</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-                <div class="menu-wrapper">
-                    <h4>Chocolate Lava Cake</h4>
-                    <div class="menu-description">
-                        <p>Revisited</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-                <div class="menu-wrapper">
-                    <h4>Napolean</h4>
-                    <div class="menu-description">
-                        <p>With bluberries and marzipan</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-            </div>
-            
-        </section>
-        <!-- btn here -->
-            <section class="btn-explore">
-                <div class="gradient"><a href="#"> <p>Order</p>    </a> </div>
-            </section>
 
+            <h2 class="page-menu__title">ENTREES</h2>
+            <article class="page-menu">
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Citrus Squid Carpaccio</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">With orange zest</p>
+                        <p class="page-menu-insert__price">25€</p>
+                    </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
+                    </div>
+                </div>
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Grandmother's Vegetable Soup</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">Carrots, parsnips, Jerusalem artichoke</p>
+                        <p class="page-menu-insert__price">35€</p>
+                    </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
+                    </div>
+                </div>
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Onion Soup</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">Revisited</p>
+                        <p class="page-menu-insert__price">20€</p>
+                    </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
+                    </div>
+                </div>
+            </article>
+
+            <h2 class="page-menu__title">MAIN DISH</h2>
+            <article class="page-menu">
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Scallops</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">With mashed parsnip</p>
+                        <p class="page-menu-insert__price">40€</p>
+                    </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
+                    </div>
+                </div>
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Magret de canard</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">With mashed potatoes</p>
+                        <p class="page-menu-insert__price">35€</p>
+                    </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
+                    </div>
+                </div>
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Game Hen</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">With vegetable gnocchis</p>
+                        <p class="page-menu-insert__price">44€</p>
+                    </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
+                    </div>
+                </div>
+            </article>
+
+            <h2 class="page-menu__title">DESSERTS</h2>
+            <article class="page-menu">
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Floral ice Cream</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">With hazelnut butter</p>
+                        <p class="page-menu-insert__price">18€</p>
+                    </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
+                    </div>
+                </div>
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Chocolate Lava Cake</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">Revisited</p>
+                        <p class="page-menu-insert__price">22€</p>
+                    </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
+                    </div>
+                </div>
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Napolean</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">With bluberries and marzipan</p>
+                        <p class="page-menu-insert__price">23€</p>
+                    </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
+                    </div>
+                </div>
+            </article>
+        </section >
+
+        <!-- btn here -->
+
+        <section class="btn-explore">
+            <div class="gradient">
+                <a href="#"> 
+                    <p>Order</p>
+                </a> 
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="footer-ohmyfood">
-            <p>ohmyfood</p>
-        </div>
-        <div class="footer-icons">
-            <i class="fa-sharp fa-solid fa-utensils"></i>
-            <div>
-                <p>Suggest a restaurant</p>
-            </div>
-        </div>
-        <div class="footer-icons">
-            <span >
-                <i class="fa-solid fa-handshake"></i>
-            </span>
-            <div>
-                <p>Become a partner</p>
-            </div>
-        </div>
-        <div id="legal-and-contact">
-            <p> Legal</p>
-            <a class="contact" href="mailto:email@example.com">contact</a>
-            
+<!-- footer here -->
+
+    <footer id="footer" class="footer">
+        <div class="footer-insert">
+            <h2 class="footer-insert__title">ohmyfood</h2>
+            <a href="#" class="footer-insert__link">
+                <i class="fas fa-utensils footer-insert__icon"></i><strong>Suggest a restaurant</strong>
+            </a>
+            <a href="#" class="footer-insert__link">
+                <i class="fas fa-hands-helping footer-insert__icon"></i><strong>Become a partner</strong>
+            </a>
+            <a href="#" class="footer-insert__link">Legal</a>
+            <a href="mailto:hello@ohmyfood.com" class="footer-insert__link">Contact</a>
         </div>
     </footer>
 

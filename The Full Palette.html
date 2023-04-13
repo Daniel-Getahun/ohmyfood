@@ -5,252 +5,162 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Full Palette</title>
-    <!-- <link rel="stylesheet" href="menu.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     
 
 </head>
 <body>
-    
-    <!-- loading here -->
-    <div class="loader">loading.....</div>
-
-    <header>
-        <div class="back-btn">
-            <a href="index.html">
-                <i class="fa-solid fa-arrow-left"></i>
-            </a>
-        </div>
-        <div class="logo">
-            <img src="images/logo/ohmyfood.png" alt="ohmyfood logo">
-        </div>
-        
+    <header class="menu-header">
+        <a href="index.html" class="header-back-btn">
+            <i class="fas fa-arrow-left"></i>
+        </a> 
+        <a href="index.html"><img src="images/logo/ohmyfood.png" alt="Ohmyfood-logo" class="menu-header"></a>
     </header>
 
-    <section class="banner">
-        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.webp" alt="">
+    <section class="banner-menu">
+        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.webp" alt=" the full palette dish">
     </section>
 
+    <main class="restaurant-page-grey-background" id="main">
+        <section class="restaurant-page-menu">
+            <div class="restaurant-page-menu__title">
+                <h1 class="restaurant-page-menu__text">The Full Palette</h1>
+                <span class="hoverheart">
+                    <i class="far fa-heart hoverheart__content-light"></i>
+                    <i class="fas fa-heart hoverheart__content-solid"></i>
+                </span>
+            </div>
 
-    <main id="restaurant-menu">
-        <section class="restaurant-menu-title">
-            <h1> The Full Palette </h1>
-            <span class="material-symbols-outlined">
-                favorite
-            </span>
-        </section>
-        
-        <section class="restaurant-menu-groups">
-            <div class="menu-card"> <p class="menu-card-title">ENTREES</p>
-                <div class="menu-wrapper menu">
-                    <h4>Escargot</h4>
-                    <div class="menu-description">
-                        <p>With southern French spices</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check "></i>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
+            <h2 class="page-menu__title">ENTREES</h2>
+            <article class="page-menu">
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Escargot</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">With southern French spices</p>
+                        <p class="page-menu-insert__price">25€</p>
                     </div>
-                    
-                    
-                </div>
-                <div class="menu-wrapper menu">
-                    <h4>Duck Foie Gras</h4>
-                    <div class="menu-description">
-                        <p>With black truffle shavings</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
                     </div>
-                    
-                    
                 </div>
-                <div class="menu-wrapper menu">
-                    <h4>Fried egg</h4>
-                    <div class="menu-description">
-                        <p>Seasoned with truffle cream and</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Duck Foie Gras</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">With black truffle shavings</p>
+                        <p class="page-menu-insert__price">35€</p>
                     </div>
-                    
-                    
-                </div>
-            </div>
-            <div class="menu-card"> <p class="menu-card-title"> MAIN DISH </p> 
-                <div class="menu-wrapper menu">
-                    <h4>Herb-Encrusted Steak</h4>
-                    <div class="menu-description">
-                        <p>With delicately sliced and seasoned veg...</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
                     </div>
-                    
-                    
                 </div>
-                <div class="menu-wrapper menu">
-                    <h4>Ox Tail Shepard's Pie</h4>
-                    <div class="menu-description">
-                        <p>With black truffle and pureed parsnips</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Fried egg</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">Seasoned with truffle cream and</p>
+                        <p class="page-menu-insert__price">20€</p>
                     </div>
-                    
-                    
-                </div>
-                <div class="menu-wrapper menu">
-                    <h4>Filet of Sole</h4>
-                    <div class="menu-description">
-                        <p>With citrus dressing</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
                     </div>
-                    
-                    
                 </div>
-            </div>
-            <div class="menu-card"> <p class="menu-card-title"> DESSERTS</p>
-                <div class="menu-wrapper menu">
-                    <h4>Paris-Brest</h4>
-                    <div class="menu-description">
-                        <p>Revisted</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
+            </article>
+
+            <h2 class="page-menu__title">MAIN DISH</h2>
+            <article class="page-menu">
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Herb-Encrusted Steak</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">With delicately sliced and seasoned veg...</p>
+                        <p class="page-menu-insert__price">40€</p>
                     </div>
-                    
-                    
-                </div>
-                <div class="menu-wrapper menu">
-                    <h4>Chocolate Macaroons</h4>
-                    <div class="menu-description">
-                        <p>With vanilla ice cream</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
                     </div>
-                    
-                    
                 </div>
-                <div class="menu-wrapper menu">
-                    <h4>Chocolate Mousse</h4>
-                    <div class="menu-description">
-                        <p>With spices and black truffle</p>
-                        <div class="menu-price">
-                            <div class="price">
-                                <p>25€</p>
-                            </div>
-                            <div class="menu-check-mark">
-                                <div class="check box">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                            </div>
-                            
-                        </div>
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Ox Tail Shepard's Pie</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">With black truffle and pureed parsnips</p>
+                        <p class="page-menu-insert__price">25€</p>
                     </div>
-                    
-                    
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
+                    </div>
                 </div>
-            </div>
-            
-        </section>
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Filet of Sole</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">With citrus dressing</p>
+                        <p class="page-menu-insert__price">25€</p>
+                    </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
+                    </div>
+                </div>
+            </article>
+
+            <h2 class="page-menu__title">DESSERTS</h2>
+            <article class="page-menu">
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Paris-Brest</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">Revisted</p>
+                        <p class="page-menu-insert__price">18€</p>
+                    </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
+                    </div>
+                </div>
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Chocolate Macaroons</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">With vanilla ice cream</p>
+                        <p class="page-menu-insert__price">22€</p>
+                    </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
+                    </div>
+                </div>
+                <div class="page-menu-insert">
+                    <h3 class="page-menu-insert__title">Chocolate Mousse</h3>
+                    <div class="page-menu-insert__subtitle">
+                        <p class="page-menu-insert__text">With spices and black truffle</p>
+                        <p class="page-menu-insert__price">23€</p>
+                    </div>
+                    <div class="page-menu-insert__check">
+                        <i class="fas fa-check-circle page-menu-insert__checkcontent"></i>
+                    </div>
+                </div>
+            </article>
+        </section >
+
         <!-- btn here -->
-            <section class="btn-explore">
-                <div class="gradient"><a href="#"> <p>Order</p>    </a> </div>
-            </section>
 
+        <section class="btn-explore">
+            <div class="gradient">
+                <a href="#"> 
+                    <p>Order</p>
+                </a> 
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="footer-ohmyfood">
-            <p>ohmyfood</p>
-        </div>
-        <div class="footer-icons">
-            <i class="fa-sharp fa-solid fa-utensils"></i>
-            <div>
-                <p>Suggest a restaurant</p>
-            </div>
-        </div>
-        <div class="footer-icons">
-            <span >
-                <i class="fa-solid fa-handshake"></i>
-            </span>
-            <div>
-                <p>Become a partner</p>
-            </div>
-        </div>
-        <div id="legal-and-contact">
-            <p> Legal</p>
-            <a class="contact" href="mailto:email@example.com">contact</a>
-            
+<!-- footer here -->
+
+    <footer id="footer" class="footer">
+        <div class="footer-insert">
+            <h2 class="footer-insert__title">ohmyfood</h2>
+            <a href="#" class="footer-insert__link">
+                <i class="fas fa-utensils footer-insert__icon"></i><strong>Suggest a restaurant</strong>
+            </a>
+            <a href="#" class="footer-insert__link">
+                <i class="fas fa-hands-helping footer-insert__icon"></i><strong>Become a partner</strong>
+            </a>
+            <a href="#" class="footer-insert__link">Legal</a>
+            <a href="mailto:hello@ohmyfood.com" class="footer-insert__link">Contact</a>
         </div>
     </footer>
 
