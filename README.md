@@ -1,2 +1,3 @@
 # ohmyfood
-https://github.com/Elu-code/ohmyfood
+
+https://elu-code.github.io/ohmyfood/
