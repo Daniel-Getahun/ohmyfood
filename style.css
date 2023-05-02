@@ -240,7 +240,7 @@ main h2 {
     display: block;
     font-size: 0.9rem;
     text-align: center;
-    color: black;
+    color: green;
     padding: 8px;
 }
 .restaurant-card-heading__title {
@@ -482,8 +482,6 @@ main h2 {
     
 }
 
-
-
 /* footer here */
 .footer {
     background: black;
@@ -505,8 +503,6 @@ main h2 {
 .footer-insert__icon {
     width: 30px;
 }
-
-
 
 /*Tablet here*/
 @media screen and (min-width: 768px) and (max-width: 960px) {
